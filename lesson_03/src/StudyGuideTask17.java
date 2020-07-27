@@ -22,7 +22,7 @@ public class StudyGuideTask17 {
                 }
             }
         }
-        for (i = array.length - 1; i >= array.length / 2 + 1; i--) { // Выполняем цикл для заполнения нижнего треугольника
+        for (i = array.length - 1; i >= array.length / 2; i--) { // Выполняем цикл для заполнения нижнего треугольника
             for (j = 0; j < array[i].length; j++) {
                 if ((j < (array[i].length - 1 - i)) || (j > i)) {
                     array[i][j] = 0;
@@ -33,7 +33,7 @@ public class StudyGuideTask17 {
         }
         for (i = 0; i < array.length; i++) { // Вывод итогового массива в консоль
             for (j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + "\t");
+                System.out.print(array[i][j] + " ");
             }
             System.out.println();
         }
